@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" modified="2024-03-17T17:02:03.839Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="xi7wKOT0PKYjcou3HJP1" version="24.0.7" type="device">
+  <diagram name="Page-1" id="RcTufWgpzT6RH-LpDCVU">
+    <mxGraphModel dx="1386" dy="1954" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YLT82qGis1uP0_9uUPNY-1" value="&amp;nbsp;Диаграмма вариантов использования" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;" vertex="1" parent="1">
+          <mxGeometry x="289" y="-760" width="371" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-9" value="Созд., сохр. и удал.&amp;nbsp; чертежей" style="ellipse;html=1;whiteSpace=wrap;" vertex="1" parent="YLT82qGis1uP0_9uUPNY-1">
+          <mxGeometry x="21" y="40" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-18" value="Актуализация существующих технологических карт и инструкций" style="ellipse;html=1;whiteSpace=wrap;" vertex="1" parent="YLT82qGis1uP0_9uUPNY-1">
+          <mxGeometry x="34" y="240" width="124" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-17" value="Разработка новых технологических процессов" style="ellipse;html=1;whiteSpace=wrap;" vertex="1" parent="YLT82qGis1uP0_9uUPNY-1">
+          <mxGeometry x="27" y="160" width="110" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-14" value="Созд., сохр. и удал. Создание заказов на производство&amp;nbsp;" style="ellipse;html=1;whiteSpace=wrap;" vertex="1" parent="YLT82qGis1uP0_9uUPNY-1">
+          <mxGeometry x="21" y="100" width="149" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-12" value="Проведение анализа и контроля характеристик материалов с помощью системы." style="ellipse;html=1;whiteSpace=wrap;" vertex="1" parent="YLT82qGis1uP0_9uUPNY-1">
+          <mxGeometry x="191" y="40" width="162" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-11" value="Получение оперативной информации о работе оборудования." style="ellipse;html=1;whiteSpace=wrap;" vertex="1" parent="YLT82qGis1uP0_9uUPNY-1">
+          <mxGeometry x="191" y="150" width="159" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-16" value="Анализ потребностей в материалах и комплектующих." style="ellipse;html=1;whiteSpace=wrap;" vertex="1" parent="YLT82qGis1uP0_9uUPNY-1">
+          <mxGeometry x="21" y="340" width="146" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-13" value="Формирование заказов на закупку материалов и комплектующих." style="ellipse;html=1;whiteSpace=wrap;" vertex="1" parent="YLT82qGis1uP0_9uUPNY-1">
+          <mxGeometry x="34" y="450" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLT82qGis1uP0_9uUPNY-2" target="YLT82qGis1uP0_9uUPNY-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLT82qGis1uP0_9uUPNY-2" target="YLT82qGis1uP0_9uUPNY-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-2" value="Главный инженер производства" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-720" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLT82qGis1uP0_9uUPNY-3" target="YLT82qGis1uP0_9uUPNY-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YLT82qGis1uP0_9uUPNY-3" target="YLT82qGis1uP0_9uUPNY-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-3" value="Инженер-технолог" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-540" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLT82qGis1uP0_9uUPNY-4" target="YLT82qGis1uP0_9uUPNY-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-4" value="Главный металлург" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="-720" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLT82qGis1uP0_9uUPNY-5" target="YLT82qGis1uP0_9uUPNY-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-5" value="Оператор производственного&amp;nbsp;&lt;div&gt;оборудования&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="-620" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YLT82qGis1uP0_9uUPNY-8" target="YLT82qGis1uP0_9uUPNY-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="YLT82qGis1uP0_9uUPNY-8" target="YLT82qGis1uP0_9uUPNY-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YLT82qGis1uP0_9uUPNY-8" value="Менеджер по закупкам" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-360" width="30" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
