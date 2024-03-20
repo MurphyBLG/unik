@@ -13,18 +13,18 @@ t.Start();
 
 void Service()
 {
-    Socket socket = listener.AcceptSocket();
+    var socket = listener.AcceptSocket();
 
     try
     {
         Stream s = new NetworkStream(socket);
-        StreamReader sr = new StreamReader(s);
-        StreamWriter sw = new StreamWriter(s);
+        var sr = new StreamReader(s);
+        var sw = new StreamWriter(s);
         sw.AutoFlush = true;
 
         while (true)
         {
-            string? text = sr.ReadLine();
+            var text = sr.ReadLine();
             if (string.IsNullOrWhiteSpace(text))
             {
                 sw.WriteLine("no word recieved\n");
