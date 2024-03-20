@@ -1,7 +1,5 @@
 ﻿using System.Net;
 using System.Net.Sockets;
-using System.Text.Json.Serialization;
-using WordSorter.Core;
 
 var localPort = 1488;
 var ipAddress = IPAddress.Parse("127.0.0.1");
