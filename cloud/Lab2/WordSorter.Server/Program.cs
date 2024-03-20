@@ -19,8 +19,10 @@ void Service()
     {
         Stream s = new NetworkStream(socket);
         var sr = new StreamReader(s);
-        var sw = new StreamWriter(s);
-        sw.AutoFlush = true;
+        var sw = new StreamWriter(s)
+        {
+            AutoFlush = true
+        };
 
         while (true)
         {
