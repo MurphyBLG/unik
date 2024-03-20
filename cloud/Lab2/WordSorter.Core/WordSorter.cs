@@ -12,7 +12,7 @@ public class WordSorter
 
         var parsedText = text.ToLower().Split(_delimeters, StringSplitOptions.RemoveEmptyEntries);
 
-        foreach ( var c in parsedText )
+        foreach (var c in parsedText)
         {
             if (result.TryAdd(c, 1))
                 continue;
