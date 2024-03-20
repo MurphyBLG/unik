@@ -1,12 +1,11 @@
 ﻿using System.Net.WebSockets;
 using System.Text;
-using System.Threading;
 
 var ws = new ClientWebSocket();
 await ws.ConnectAsync(new Uri("ws://localhost:5175/api/web-socket"), CancellationToken.None);
 
 var buffer = new byte[1024 * 4];
-while(true)
+while (true)
 {
     var message = Console.ReadLine();
     var bytes = Encoding.UTF8.GetBytes(message);

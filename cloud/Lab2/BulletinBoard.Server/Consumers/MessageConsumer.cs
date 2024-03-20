@@ -3,8 +3,6 @@ using BulletinBoard.Core.Models;
 using BulletinBoard.Server.Contracts;
 using BulletinBoard.Server.Persistance;
 using MassTransit;
-using Microsoft.EntityFrameworkCore;
-using System.Text;
 
 namespace BulletinBoard.Server.Consumers;
 
@@ -12,9 +10,10 @@ public class MessageConsumer(MainContext repostory, IMapper mapper) : IConsumer<
 {
     public async Task Consume(ConsumeContext<GetAllAdsContract> context)
     {
-        await context.RespondAsync(new GetAllAdsResponse {
+        await context.RespondAsync(new GetAllAdsResponse
+        {
             Message = string.Join(";\n", repostory.Ads.Select(s => s.Message))
-            });
+        });
     }
 
     public async Task Consume(ConsumeContext<CreateAdContract> context)

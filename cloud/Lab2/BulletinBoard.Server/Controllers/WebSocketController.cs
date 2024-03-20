@@ -10,7 +10,7 @@ namespace BulletinBoard.Server.Controllers;
 [ApiController]
 public class WebSocketController(ILogger<WebSocketController> logger, IBus bus, IRequestClient<GetAllAdsContract> getAllAdsRequestClient, IRequestClient<CreateAdContract> createAdRequestClient) : ControllerBase
 {
-    public async Task<IActionResult> OpenWs(CancellationToken cancellationToken=default)
+    public async Task<IActionResult> OpenWs(CancellationToken cancellationToken = default)
     {
         try
         {
@@ -18,9 +18,9 @@ public class WebSocketController(ILogger<WebSocketController> logger, IBus bus, 
                 throw new Exception("Not a ws request!");
 
             using var webSocket = await HttpContext.WebSockets.AcceptWebSocketAsync();
-            
+
             var buffer = new byte[1024];
-            while(true)
+            while (true)
             {
                 var message = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), cancellationToken);
 
