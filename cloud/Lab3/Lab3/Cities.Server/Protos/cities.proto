@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "Cities.Server";
+
+package cities;
+
+// The greeting service definition.
+service CitiesGame {
+  // Sends a greeting
+  rpc Play (stream CitiesRequest) returns (stream CitiesReply);
+}
+
+// The request message containing the user's name.
+message CitiesRequest {
+  string cityName = 1;
+}
+
+// The response message containing the greetings.
+message CitiesReply {
+  string message = 1;
+}

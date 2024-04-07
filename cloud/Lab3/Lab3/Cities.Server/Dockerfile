@@ -9,17 +9,17 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Cities/Cities.csproj", "Cities/"]
-RUN dotnet restore "./Cities/./Cities.csproj"
+COPY ["Cities.Server/Cities.Server.csproj", "Cities.Server/"]
+RUN dotnet restore "./Cities.Server/./Cities.Server.csproj"
 COPY . .
-WORKDIR "/src/Cities"
-RUN dotnet build "./Cities.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Cities.Server"
+RUN dotnet build "./Cities.Server.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Cities.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Cities.Server.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Cities.dll"]
+ENTRYPOINT ["dotnet", "Cities.Server.dll"]
