@@ -3,7 +3,7 @@ using System.Net;
 using System.Text;
 
 string ipadress = "127.0.0.1";
-Int32 port = 1488;
+Int32 port = 1500;
 if (args.Length > 0)
     ipadress = args[0];
 UdpClient udpc = new UdpClient(ipadress, port);

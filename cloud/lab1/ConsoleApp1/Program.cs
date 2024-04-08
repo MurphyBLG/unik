@@ -10,7 +10,7 @@ Dictionary<string, string> employees =
  {"jack", "salesman"}
  };
 
-var localPort = 1488;
+var localPort = 1500;
 var ipAddress = IPAddress.Parse("127.0.0.1");
 
 TcpListener listener = new(ipAddress, localPort);

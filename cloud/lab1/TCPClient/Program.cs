@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Net.Sockets;
 
-var localPort = 1488;
+var localPort = 1500;
 var ipAddress = "127.0.0.1";
 TcpClient client = new TcpClient(ipAddress, localPort);
 

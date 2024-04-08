@@ -11,10 +11,11 @@ Dictionary<string, string> employees =
  {"jack", "salesman"}
  };
 
-var port = 1488;
+var port = 1500;
 UdpClient udpc = new(port);
 Console.WriteLine("Server started, servicing on port "+port.ToString());
 IPEndPoint? ep = null;
+
 while (true)
 {
     var rdata = udpc.Receive(ref ep);
