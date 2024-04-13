@@ -1,5 +1,7 @@
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
+using TodoList.Consumers;
+using TodoList.Contracts;
 using TodoList.Persistance;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,12 @@ var builder = WebApplication.CreateBuilder(args);
 
     builder.Services.AddMassTransit(x =>
     {
+        x.AddConsumer<TodoConsumer>()
+            .Endpoint(e => e.Name = $"{nameof(TodoConsumer)}");
+        x.AddRequestClient<GetAllTodos>(new Uri($"exchange:{nameof(TodoConsumer)}"));
+        x.AddRequestClient<CreateTodoItem>(new Uri($"exchange:{nameof(TodoConsumer)}"));
+        x.AddRequestClient<DeleteTodoItem>(new Uri($"exchange:{nameof(TodoConsumer)}"));
+
         x.UsingInMemory((context, cfg) =>
         {
             cfg.ConfigureEndpoints(context);

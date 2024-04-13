@@ -22,10 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Consumers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\TodoList.Contracts\TodoList.Contracts.csproj" />
     <ProjectReference Include="..\TodoListCore\TodoList.Core.csproj" />
   </ItemGroup>
 
