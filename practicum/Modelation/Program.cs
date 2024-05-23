@@ -17,13 +17,13 @@ public class Program
         CancellationToken = CancellationTokenSource.Token;
     }
 
-    private static Task Main(string[] args)
+    private static async Task Main(string[] args)
     {
         var timer = new System.Timers.Timer(600);
         timer.Elapsed += OnTimedEvent;
         timer.AutoReset = false;
         var messageQueue = Channel.CreateUnbounded<int>();
-        var producer = new Producer(messageQueue.Writer, 10, Decimal.ToInt32(Math.Round((90m + M) / 60)));
+        var producer = new Producer(messageQueue.Writer, 1, Decimal.ToInt32(Math.Round((90m + M) / 60)));
         var consumers = CreatePhones(CountOfPhones, messageQueue);
 
         try
@@ -67,6 +67,10 @@ public class Program
 
     private static List<Task> RunConsumers<T>(List<T> consumers, CancellationToken cancellationToken) where T : Consumer
     {
-        return consumers.Select(consumer => consumer.ConsumeData(cancellationToken)).ToList();
+        var consumersTask = new List<Task>();
+        foreach (var consumer in consumers)
+            consumersTask.Add(consumer.ConsumeData(cancellationToken));
+
+        return consumersTask;
     }
 }
