@@ -17,7 +17,7 @@ public class Program
         CancellationToken = CancellationTokenSource.Token;
     }
 
-    private static Task Main(string[] args)
+    private static void Main(string[] args)
     {
         var timer = new System.Timers.Timer(600);
         timer.Elapsed += OnTimedEvent;
