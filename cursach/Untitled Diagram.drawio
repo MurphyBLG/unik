@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" modified="2024-06-02T17:55:08.969Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="kmPUQ-04XwRvdBMsDstL" version="24.4.13" type="device">
+  <diagram name="Page-1" id="RcTufWgpzT6RH-LpDCVU">
+    <mxGraphModel dx="792" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uZNiXfOXtyjzxC2OrvUk-1" value="Общая архитектура системы" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=100;height=50;" vertex="1" parent="1">
+          <mxGeometry x="120" y="180" width="600" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="uZNiXfOXtyjzxC2OrvUk-13" value="Сервер" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="170" y="360" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uZNiXfOXtyjzxC2OrvUk-14" value="Клиент" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="344" y="210" width="156" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uZNiXfOXtyjzxC2OrvUk-15" value="Веб приложение на ReactJS" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="250" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uZNiXfOXtyjzxC2OrvUk-16" value="ASP .NET Core" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="400" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uZNiXfOXtyjzxC2OrvUk-18" value="postgresql" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="500" y="370" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="uZNiXfOXtyjzxC2OrvUk-19" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uZNiXfOXtyjzxC2OrvUk-16" target="uZNiXfOXtyjzxC2OrvUk-18">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="350" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uZNiXfOXtyjzxC2OrvUk-20" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.09;exitY=0.407;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uZNiXfOXtyjzxC2OrvUk-15" target="uZNiXfOXtyjzxC2OrvUk-16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="350" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
